@@ -1,0 +1,86 @@
+/* Custom styles for VyapaarPay Finance */
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom gradient for buttons */
+.btn-gradient {
+    background: linear-gradient(135deg, #2563eb, #0d9488);
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form focus styles */
+input:focus, select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* WhatsApp button animation */
+#whatsappBtn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Button hover effects */
+button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    /* Reduce hero padding on mobile */
+    #hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Adjust font sizes for better mobile readability */
+    #hero h1 {
+        font-size: 2.25rem;
+    }
+
+    #hero p:first-of-type {
+        font-size: 1.125rem;
+    }
+
+    /* Ensure sections have appropriate padding */
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Make cards more touch-friendly */
+    .card {
+        padding: 1rem;
+    }
+
+    /* Adjust form elements */
+    input, select, button {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+
+/* Hero text shadow for better contrast */
+.hero-text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
