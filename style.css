@@ -1,8 +1,14 @@
 /* Custom styles for VyapaarPay Finance */
 
-/* Ensure smooth scrolling */
+/* CSS Variables for consistent cross-browser mobile layout */
+:root {
+    --header-height: 80px; /* Fixed header height for mobile menu positioning */
+}
+
+/* Safe area support for mobile devices with notches */
 html {
     scroll-behavior: smooth;
+    padding-top: env(safe-area-inset-top); /* Respect safe areas on mobile */
 }
 
 /* Header styles for professional fintech appearance */
@@ -10,12 +16,13 @@ header {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: var(--header-height); /* Fixed height for consistent positioning */
 }
 
 /* Mobile menu overlay styles - positioned as fixed overlay below header */
 .mobile-menu {
     position: fixed;
-    top: 80px; /* Header height */
+    top: var(--header-height); /* Use CSS variable for consistent positioning */
     left: 0;
     width: 100%;
     z-index: 50;
