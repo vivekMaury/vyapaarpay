@@ -6,6 +6,8 @@ let isMenuOpen = false; // Boolean state to track menu visibility
 document.getElementById('mobile-menu-button').addEventListener('click', function() {
     const menu = document.getElementById('mobile-menu');
     const button = document.getElementById('mobile-menu-button');
+    const hamburgerIcon = button.querySelector('.hamburger-icon');
+    const closeIcon = button.querySelector('.close-icon');
 
     // Toggle the boolean state
     isMenuOpen = !isMenuOpen;
@@ -14,11 +16,17 @@ document.getElementById('mobile-menu-button').addEventListener('click', function
     if (isMenuOpen) {
         menu.classList.add('open');
         button.setAttribute('aria-expanded', 'true');
+        // Switch to close icon
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
         // Lock body scroll to prevent background movement
         document.body.style.overflow = 'hidden';
     } else {
         menu.classList.remove('open');
         button.setAttribute('aria-expanded', 'false');
+        // Switch back to hamburger icon
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
         // Unlock body scroll
         document.body.style.overflow = 'auto';
     }
@@ -34,7 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close the menu by removing the open class and updating state
             mobileMenu.classList.remove('open');
             isMenuOpen = false;
-            document.getElementById('mobile-menu-button').setAttribute('aria-expanded', 'false');
+            const button = document.getElementById('mobile-menu-button');
+            button.setAttribute('aria-expanded', 'false');
+            // Reset icons to hamburger
+            const hamburgerIcon = button.querySelector('.hamburger-icon');
+            const closeIcon = button.querySelector('.close-icon');
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
             // Unlock body scroll
             document.body.style.overflow = 'auto';
         });
