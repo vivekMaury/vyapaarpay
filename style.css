@@ -5,6 +5,34 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header styles for professional fintech appearance */
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile menu overlay styles - positioned as fixed overlay below header */
+.mobile-menu {
+    position: fixed;
+    top: 80px; /* Header height */
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none; /* Prevent interaction when hidden */
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Allow interaction when open */
+}
+
 /* Custom gradient for buttons */
 .btn-gradient {
     background: linear-gradient(135deg, #2563eb, #0d9488);
@@ -13,6 +41,27 @@ html {
 /* Card hover effects */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EMI Calculator Styles */
+#loan-amount::-webkit-slider-thumb,
+#interest-rate::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2563eb;
+    cursor: pointer;
+}
+
+#loan-amount::-moz-range-thumb,
+#interest-rate::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2563eb;
+    cursor: pointer;
+    border: none;
 }
 
 .card:hover {

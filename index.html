@@ -3,218 +3,960 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VyapaarPay Finance - Multiple Banks. One VyapaarPay</title>
-    <meta name="description" content="Honest loan advisory services for salaried employees, business owners, MSMEs, and startups. Free eligibility check and WhatsApp consultation.">
-    <meta name="keywords" content="loan advisory, personal loan, business loan, MSME loan, CIBIL guidance, India">
+    <!-- SEO Title: Includes keywords for loan advisory services -->
+    <title>VyapaarPay Finance - Loan Advisory Services for Personal, Business & MSME Loans in India</title>
+    <!-- SEO Meta Description: Describes services and includes keywords -->
+    <meta name="description" content="Get expert loan advisory for all types of loans including personal, business, MSME loans. Personalized guidance, multiple bank partnerships, no hidden fees. Free eligibility check.">
+    <!-- Tailwind CSS: Utility-first CSS framework for styling -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS: Additional styles for the website -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Analytics 4: Tracks website traffic and user behavior -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+    <!-- Meta Pixel: Facebook tracking pixel for ads and analytics -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google Search Console verification: Add your verification meta tag here -->
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <!-- Hero Section -->
-    <section id="hero" class="bg-gradient-to-r from-blue-600 to-teal-500 py-16 md:py-20 px-4">
-        <div class="max-w-7xl mx-auto px-5 md:px-10">
-            <div class="bg-white bg-opacity-95 rounded-lg p-6 md:p-8">
-                <div class="grid grid-cols-1 md:grid-cols-[60%_40%] gap-8 md:gap-12 items-center">
-                    <div class="flex flex-col justify-center text-gray-900">
-                        <div class="flex items-center gap-3 md:gap-4 mb-6">
-                            <img src="logo.png" alt="VyapaarPay Finance Logo" class="h-8 md:h-12 w-auto flex-shrink-0">
-                            <h1 class="text-xl md:text-3xl font-bold m-0">VyapaarPay Finance</h1>
-                        </div>
-                        <h2 class="text-3xl md:text-6xl font-bold mb-6 leading-tight">Expert <span class="text-blue-600">Loan</span> Advisory for MSMEs & Individuals</h2>
-                        <ul class="space-y-3 mb-8 text-lg md:text-xl">
-                            <li class="flex items-center">
-                                <span class="text-green-600 mr-3">✓</span>
-                                Multiple Bank Partnerships
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-green-600 mr-3">✓</span>
-                                Personalized Loan Guidance
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-green-600 mr-3">✓</span>
-                                Fast Approval Process
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-green-600 mr-3">✓</span>
-                                No Hidden Fees
-                            </li>
-                        </ul>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#form" class="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">Apply for Loan</a>
-                            <a href="#whatsapp" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 text-center">WhatsApp Consultation</a>
-                        </div>
+<body class="bg-white text-gray-900">
+    <!-- Header Section: Clean, professional fintech header with clear CTA hierarchy -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo: Clickable brand identity -->
+                <a href="index.html" class="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                    <img src="logo.png" alt="VyapaarPay Finance Logo" class="h-8 w-auto mr-3">
+                    <span class="text-xl font-bold text-gray-900">VyapaarPay Finance</span>
+                </a>
+
+                <!-- Desktop Navigation: Streamlined to 5 key items for better UX -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="emi-calculator.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">EMI Calculator</a>
+                    <a href="#loan-discovery" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Loans</a>
+                    <a href="#how" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">How It Works</a>
+                    <a href="guides.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Guides</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA Section: Clear hierarchy with primary and secondary actions -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <!-- Secondary CTA: WhatsApp for immediate contact -->
+                    <a href="https://wa.me/919999193595" target="_blank" rel="noopener noreferrer"
+                       class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-colors flex items-center text-sm"
+                       aria-label="Contact via WhatsApp">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <!-- Primary CTA: Main conversion action -->
+                    <a href="#loan-discovery" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Check Loan Options
+                    </a>
+                </div>
+
+                <!-- Mobile Header: Logo, WhatsApp, Hamburger -->
+                <div class="md:hidden flex items-center space-x-3">
+                    <!-- Mobile WhatsApp CTA -->
+                    <a href="https://wa.me/919999193595" target="_blank" rel="noopener noreferrer"
+                       class="bg-green-500 text-white p-2 rounded-lg hover:bg-green-600 transition-colors"
+                       aria-label="Contact via WhatsApp">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown: Clean, focused navigation -->
+            <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Home</a>
+                    <a href="emi-calculator.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">EMI Calculator</a>
+                    <a href="#loan-discovery" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Loans</a>
+                    <a href="#how" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">How It Works</a>
+                    <a href="guides.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Guides</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Contact</a>
+                    <div class="px-3 py-2">
+                        <a href="#loan-discovery" class="block w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center">Check Loan Options</a>
                     </div>
-                    <div class="flex justify-center">
-                        <img src="hero-visual.png" alt="VyapaarPay Finance Hero Visual" class="w-full max-w-lg h-auto rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section: Main banner with headline, benefits, and CTAs -->
+    <section id="home" class="bg-gray-50 py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Expert <span class="text-blue-600">Loan</span> Advisory for MSMEs & Individuals
+                    </h1>
+                    <ul class="space-y-3 mb-8 text-lg">
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-3">•</span>
+                            Multiple Bank Partnerships
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-3">•</span>
+                            Personalized Loan Guidance
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-3">•</span>
+                            Guidance for Efficient Loan Processing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-3">•</span>
+                            No Hidden Fees
+                        </li>
+                    </ul>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="emi-calculator.html" class="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold text-center hover:bg-gray-700 transition-colors">EMI Calculator</a>
+                        <a href="#" class="primary-cta bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-center hover:bg-blue-700 transition-colors">Check Loan Options</a>
+                        <a href="#whatsapp" class="whatsapp-cta border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold text-center hover:bg-blue-50 transition-colors">WhatsApp Consultation</a>
+                    </div>
+                    <!-- Trust signals for WhatsApp CTA -->
+                    <div class="mt-4 text-sm text-gray-600">
+                        <p class="flex items-center justify-center">
+                            <span class="mr-2">🛡️</span>
+                            Advisory-only service • No guaranteed approvals • Response within business hours
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who This Website Is For -->
-    <section class="py-12 md:py-16 px-4 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12" data-aos="fade-up">Who We Serve</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Salaried Employees</h3>
-                    <p class="text-sm md:text-base">Get personalized loan advice tailored to your salary and needs.</p>
-                </div>
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Business Owners & Traders</h3>
-                    <p class="text-sm md:text-base">Expert guidance for business expansion and working capital loans.</p>
-                </div>
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">MSMEs & Startups</h3>
-                    <p class="text-sm md:text-base">Support for micro, small, and medium enterprises to grow your business.</p>
-                </div>
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Self-Employed Professionals</h3>
-                    <p class="text-sm md:text-base">Loan solutions for freelancers, consultants, and professionals.</p>
-                </div>
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">Low or Average CIBIL Customers</h3>
-                    <p class="text-sm md:text-base">We help improve and guide you through CIBIL score-related loan processes.</p>
-                </div>
-                <div class="bg-gray-100 p-4 md:p-6 rounded-lg card" data-aos="fade-up" data-aos-delay="600">
-                    <h3 class="text-lg md:text-xl font-semibold mb-2">First-Time Loan Applicants</h3>
-                    <p class="text-sm md:text-base">Step-by-step assistance for those applying for loans for the first time.</p>
+                <div class="hidden md:block">
+                    <img src="hero-visual.png" alt="VyapaarPay Finance providing loan advisory services for MSMEs and individuals" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="py-12 md:py-16 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md card" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Personal Loan</h3>
-                    <p class="text-sm md:text-base">Unsecured loans for personal needs like medical emergencies, education, or home improvements. Quick approval and flexible repayment options.</p>
+    <!-- Who We Serve Section: Lists target audience for loan advisory services -->
+    <section id="why" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Who We Serve</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">Salaried Employees</h3>
+                    <p>Get personalized loan advice tailored to your salary and needs.</p>
                 </div>
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md card" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Business Loan</h3>
-                    <p class="text-sm md:text-base">Working capital or expansion loans for established businesses. Competitive rates and terms based on your business performance.</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">Business Owners & Traders</h3>
+                    <p>Expert guidance for business expansion and working capital loans.</p>
                 </div>
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md card" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl md:text-2xl font-semibold mb-4">MSME Loan</h3>
-                    <p class="text-sm md:text-base">Government-backed loans for micro, small, and medium enterprises. Easier eligibility and subsidized interest rates.</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">MSMEs & Startups</h3>
+                    <p>Support for micro, small, and medium enterprises to grow your business.</p>
                 </div>
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md card" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-xl md:text-2xl font-semibold mb-4">CIBIL Guidance</h3>
-                    <p class="text-sm md:text-base">Help for customers with low CIBIL scores. We guide you on improving your credit score and finding suitable lenders.</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">Self-Employed Professionals</h3>
+                    <p>Loan solutions for freelancers, consultants, and professionals.</p>
                 </div>
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md card" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-xl md:text-2xl font-semibold mb-4">GST-Based Loan Assistance</h3>
-                    <p class="text-sm md:text-base">Loans based on your GST filings. Ideal for businesses with consistent GST returns, offering higher loan amounts.</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">Low or Average CIBIL Customers</h3>
+                    <p>We help improve and guide you through CIBIL score-related loan processes.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="py-12 md:py-16 px-4 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12" data-aos="fade-up">How It Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
-                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center font-bold mb-4">1</div>
-                    <p class="font-semibold text-sm md:text-base">Submit Details</p>
-                    <p class="text-xs md:text-sm text-gray-600">Fill out our simple form</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center font-bold mb-4">2</div>
-                    <p class="font-semibold text-sm md:text-base">Free Eligibility Check</p>
-                    <p class="text-xs md:text-sm text-gray-600">We assess your loan eligibility</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center font-bold mb-4">3</div>
-                    <p class="font-semibold text-sm md:text-base">Loan Advisor Contacts You</p>
-                    <p class="text-xs md:text-sm text-gray-600">Personalized consultation</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center font-bold mb-4">4</div>
-                    <p class="font-semibold text-sm md:text-base">Document Guidance</p>
-                    <p class="text-xs md:text-sm text-gray-600">Help with required documents</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="500">
-                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center font-bold mb-4">5</div>
-                    <p class="font-semibold text-sm md:text-base">Application Processed</p>
-                    <p class="text-xs md:text-sm text-gray-600">With your chosen lender</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2">First-Time Loan Applicants</h3>
+                    <p>Step-by-step assistance for those applying for loans for the first time.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lead Capture Form -->
-    <section id="form" class="py-12 md:py-16 px-4 bg-gray-50">
-        <div class="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8" data-aos="fade-up">Get Your Free Loan Eligibility Check</h2>
-            <form id="loanForm" data-aos="fade-up" data-aos-delay="200">
+    <!-- Trust & Transparency Section: Builds credibility and reduces bounce rate -->
+    <!-- Clear communication of our approach helps establish trust and improves conversion quality -->
+    <section id="trust" class="py-12 md:py-16 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Why Choose VyapaarPay Finance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Advisory-First Approach</h3>
+                    </div>
+                    <p class="text-gray-600">We focus on understanding your needs and providing personalized guidance rather than pushing specific products. Our recommendations are based on your financial situation and goals.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Multiple Bank & NBFC Options</h3>
+                    </div>
+                    <p class="text-gray-600">We have partnerships with various banks, NBFCs, and financial institutions across India. This gives you access to a wide range of loan products and competitive options.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Transparent Guidance</h3>
+                    </div>
+                    <p class="text-gray-600">We believe in complete transparency. You'll always know what to expect, what documents are needed, and what the next steps are in your loan journey.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">No Guaranteed Approvals</h3>
+                    </div>
+                    <p class="text-gray-600">We never guarantee loan approval because final decisions are made by lenders based on their policies and your eligibility. This ensures realistic expectations and better outcomes.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">RBI-Safe & Policy-Compliant</h3>
+                    </div>
+                    <p class="text-gray-600">Our processes and communications are fully compliant with RBI guidelines and advertising policies. We maintain ethical standards in all our advisory services.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Expert Team Support</h3>
+                    </div>
+                    <p class="text-gray-600">Our experienced advisors have deep knowledge of the Indian financial landscape and stay updated with the latest loan products and regulatory changes.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="about-us.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section: Details the types of loans we provide advisory for -->
+    <section id="loans" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Personal Loan</h3>
+                    <p>Unsecured loans for personal needs like medical emergencies, education, or home improvements. Guidance for quick processing and flexible repayment options.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Business Loan</h3>
+                    <p>Working capital or expansion loans for established businesses. Access to competitive rates and terms based on your business performance.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">MSME Loan</h3>
+                    <p>Government-backed loans for micro, small, and medium enterprises. Support for eligibility assessment and access to subsidized interest rates.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">CIBIL Guidance</h3>
+                    <p>Help for customers with low CIBIL scores. We guide you on improving your credit score and finding suitable lenders.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">GST-Based Loan Assistance</h3>
+                    <p>Loans based on your GST filings. Ideal for businesses with consistent GST returns, offering higher loan amounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Discovery Section: Helps users find suitable loan types with clickable cards -->
+    <!-- This section improves user utility by providing clear loan options and helps SEO by targeting specific loan keywords -->
+    <section id="loan-discovery" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Find the Right Loan for Your Needs</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Personal Loan Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Personal Loan</h3>
+                    <p class="text-gray-700 mb-4">Get guidance for unsecured loans suitable for personal needs like medical emergencies, education, or home improvements. We help assess your eligibility and connect you with appropriate lenders.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="personal">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- Business Loan Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Business Loan</h3>
+                    <p class="text-gray-700 mb-4">Expert advisory for working capital, expansion, or equipment financing for established businesses. We guide you through the application process with multiple bank options.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="business">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- MSME Loan Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">MSME Loan</h3>
+                    <p class="text-gray-700 mb-4">Government-backed loan programs for micro, small, and medium enterprises. We provide eligibility assessment and help access subsidized interest rates through various schemes.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="business">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- Home Loan Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Home Loan</h3>
+                    <p class="text-gray-700 mb-4">Guidance for residential property purchases or construction financing. We help you understand different home loan options and find the most suitable terms for your requirements.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="home">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- Vehicle Loan Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Vehicle Loan</h3>
+                    <p class="text-gray-700 mb-4">Advisory services for two-wheeler and four-wheeler financing. We guide you through the documentation process and help compare loan options from different financial institutions.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="home">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- Working Capital / CC Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Working Capital / Credit Card</h3>
+                    <p class="text-gray-700 mb-4">Support for business working capital needs and credit card applications. We provide guidance on maintaining healthy credit utilization and improving your credit profile.</p>
+                    <a href="#" class="loan-whatsapp-cta inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors" data-loan-type="business">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        WhatsApp Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Comparison Table: Educational content that improves SEO and builds trust -->
+    <!-- Comparison tables rank well for informational searches and help users understand loan differences -->
+    <section id="loan-comparison" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Understanding Different Loan Options</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Here's a general overview of different loan types and their typical requirements. Remember, actual eligibility and terms depend on individual circumstances and lender policies.</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-sm">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Loan Type</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Suitable For</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Typical Tenure Range</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-900">Common Documents Required</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Personal Loan</td>
+                            <td class="px-6 py-4 text-gray-700">Medical emergencies, education, home improvements, weddings, vacations</td>
+                            <td class="px-6 py-4 text-gray-700">1-5 years</td>
+                            <td class="px-6 py-4 text-gray-700">ID proof, address proof, income proof, bank statements</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Business Loan</td>
+                            <td class="px-6 py-4 text-gray-700">Working capital, equipment purchase, business expansion, inventory</td>
+                            <td class="px-6 py-4 text-gray-700">1-7 years</td>
+                            <td class="px-6 py-4 text-gray-700">Business registration, financial statements, GST returns, bank statements</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">MSME Loan</td>
+                            <td class="px-6 py-4 text-gray-700">Micro, small, and medium enterprises for business growth and operations</td>
+                            <td class="px-6 py-4 text-gray-700">1-10 years</td>
+                            <td class="px-6 py-4 text-gray-700">Business registration, GST returns, financial statements, project report</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Home Loan</td>
+                            <td class="px-6 py-4 text-gray-700">Property purchase, construction, home renovation, balance transfer</td>
+                            <td class="px-6 py-4 text-gray-700">5-30 years</td>
+                            <td class="px-6 py-4 text-gray-700">ID proof, address proof, income proof, property documents, valuation report</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Vehicle Loan</td>
+                            <td class="px-6 py-4 text-gray-700">Two-wheeler or four-wheeler purchase for personal or commercial use</td>
+                            <td class="px-6 py-4 text-gray-700">1-7 years</td>
+                            <td class="px-6 py-4 text-gray-700">ID proof, address proof, income proof, vehicle quotation, driving license</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Working Capital / Credit Card</td>
+                            <td class="px-6 py-4 text-gray-700">Short-term business financing, cash flow management, emergency funds</td>
+                            <td class="px-6 py-4 text-gray-700">Varies by product</td>
+                            <td class="px-6 py-4 text-gray-700">ID proof, business registration, financial statements, credit history</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">This table provides general information. Actual requirements may vary based on your profile and lender policies.</p>
+                <a href="#loan-discovery" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Explore Loan Options</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section: 4-step process that builds user trust and drives conversions -->
+    <!-- This section explains our advisory process clearly, reducing user anxiety and encouraging form submissions -->
+    <section id="how" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">How Our Loan Advisory Process Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1: Share Basic Details -->
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-xl mb-4 mx-auto">1</div>
+                    <h3 class="text-lg font-semibold mb-2">Share Basic Details</h3>
+                    <p class="text-gray-600">Provide your basic information through our simple form. We respect your privacy and use this information only for loan advisory purposes.</p>
+                </div>
+
+                <!-- Step 2: Eligibility Guidance -->
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-xl mb-4 mx-auto">2</div>
+                    <h3 class="text-lg font-semibold mb-2">Eligibility Guidance</h3>
+                    <p class="text-gray-600">Our experts assess your profile and provide personalized guidance on loan options that may suit your financial situation and credit history.</p>
+                </div>
+
+                <!-- Step 3: Compare Bank Options -->
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-xl mb-4 mx-auto">3</div>
+                    <h3 class="text-lg font-semibold mb-2">Compare Bank Options</h3>
+                    <p class="text-gray-600">We help you compare different lenders and loan products to find the most suitable options based on your requirements and eligibility.</p>
+                </div>
+
+                <!-- Step 4: Application Support -->
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-xl mb-4 mx-auto">4</div>
+                    <h3 class="text-lg font-semibold mb-2">Application Support</h3>
+                    <p class="text-gray-600">Receive step-by-step guidance through the application process, document preparation, and submission to help maximize your approval chances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section: Addresses common user questions for better SEO and user experience -->
+    <!-- This section targets long-tail keywords and reduces bounce rate by answering questions before users contact us -->
+    <section id="faq" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Which loan is suitable for me?</summary>
+                    <p class="mt-4 text-gray-700">The most suitable loan depends on your specific needs, income stability, and credit profile. Personal loans work well for salaried individuals with regular income. Business loans are ideal for entrepreneurs needing working capital. MSME loans offer government-backed support for small businesses. We provide personalized guidance to help you choose the right option.</p>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Do you guarantee loan approval?</summary>
+                    <p class="mt-4 text-gray-700">No, we do not guarantee loan approval. We are a loan advisory service that provides guidance and connects you with appropriate lenders. Final approval decisions are made by the financial institutions based on their lending criteria, your credit history, and documentation.</p>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Can I apply with a low CIBIL score?</summary>
+                    <p class="mt-4 text-gray-700">Yes, we work with customers across different credit profiles. While a higher CIBIL score improves approval chances, we can guide you on improving your credit score and finding lenders who consider other factors like income stability and business performance.</p>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Do you charge any fees for your services?</summary>
+                    <p class="mt-4 text-gray-700">Our basic loan advisory services are free. We may charge nominal processing fees only if you choose premium services like document preparation assistance or priority processing. All fees are clearly communicated upfront with no hidden charges.</p>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">How long does the loan advisory process take?</summary>
+                    <p class="mt-4 text-gray-700">Initial eligibility assessment takes 24-48 hours. The complete process from consultation to loan disbursement typically takes 7-15 days, depending on the loan type, documentation completeness, and lender processing time. We keep you updated throughout the process.</p>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">What documents are required for loan application?</summary>
+                    <p class="mt-4 text-gray-700">Common documents include identity proof (Aadhaar/PAN), address proof, income proof (salary slips/bank statements), and loan-specific documents. For business loans, additional documents like GST returns, business registration, and financial statements may be needed. We provide a complete checklist during consultation.</p>
+                </details>
+
+                <!-- FAQ 7 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Do you work with all banks and NBFCs?</summary>
+                    <p class="mt-4 text-gray-700">We have partnerships with multiple banks, NBFCs, and financial institutions across India. This allows us to offer you competitive options and help find the best fit for your requirements. We continuously expand our network to provide more choices.</p>
+                </details>
+
+                <!-- FAQ 8 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Is my personal information safe with you?</summary>
+                    <p class="mt-4 text-gray-700">Yes, we take data privacy seriously. Your information is encrypted, stored securely, and used only for loan advisory purposes. We comply with data protection regulations and never share your details with unauthorized parties without your consent.</p>
+                </details>
+
+                <!-- FAQ 9 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Can I get guidance for multiple loan types?</summary>
+                    <p class="mt-4 text-gray-700">Absolutely. Many customers benefit from guidance on multiple loan products. We can help you understand different options and choose the most suitable combination based on your financial goals and eligibility.</p>
+                </details>
+
+                <!-- FAQ 10 -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">What if my loan application gets rejected?</summary>
+                    <p class="mt-4 text-gray-700">If an application is rejected, we analyze the reasons and provide guidance on improving your profile. This may include credit score improvement tips, alternative loan options, or suggestions for strengthening your application for future attempts.</p>
+                </details>
+
+                <!-- Advanced FAQ 11: Secured vs Unsecured Loans -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">What is the difference between secured and unsecured loans?</summary>
+                    <p class="mt-4 text-gray-700">Secured loans require collateral (like property or vehicles) as security, which generally offers lower interest rates and higher loan amounts. Unsecured loans don't require collateral but may have higher rates and lower amounts. The choice depends on what assets you can offer and your risk preferences. <a href="guides/secured-vs-unsecured-loans.html" class="text-blue-600 hover:text-blue-800">Learn more about secured vs unsecured loans</a>.</p>
+                </details>
+
+                <!-- Advanced FAQ 12: Multiple Applications and CIBIL -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Does applying for multiple loans affect my CIBIL score?</summary>
+                    <p class="mt-4 text-gray-700">Multiple loan inquiries within a short period can temporarily impact your CIBIL score as they show up as credit inquiries. However, this effect is usually minor and short-lived. We recommend applying through a single advisor who can present your application to multiple lenders simultaneously to minimize inquiry impact.</p>
+                </details>
+
+                <!-- Advanced FAQ 13: Income Type Impact -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">How does income type affect loan eligibility?</summary>
+                    <p class="mt-4 text-gray-700">Different income types (salaried, self-employed, business income) have varying documentation and verification requirements. Salaried income is often easier to verify, while self-employed applicants may need to provide additional financial documents. Lenders assess stability, consistency, and quantum of income for each type. <a href="guides/income-types-loan-eligibility.html" class="text-blue-600 hover:text-blue-800">Read our detailed guide on income types</a>.</p>
+                </details>
+
+                <!-- Advanced FAQ 14: Online Loan Advisors Safety -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Are online loan advisors safe?</summary>
+                    <p class="mt-4 text-gray-700">Reputable online loan advisors who are registered and follow RBI guidelines are generally safe. Always verify the advisor's credentials, check for proper licensing, and ensure they have clear privacy policies. Look for advisors who don't guarantee approvals and provide transparent fee structures. We maintain strict data security standards and comply with all regulatory requirements.</p>
+                </details>
+
+                <!-- Advanced FAQ 15: Loan Agreement Checklist -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">What should I check before signing a loan agreement?</summary>
+                    <p class="mt-4 text-gray-700">Review the interest rate, processing fees, prepayment charges, and hidden costs. Verify the loan amount, tenure, and EMI calculations. Check for any cross-selling of insurance or other products. Ensure all terms match what was discussed. If anything is unclear, seek clarification before signing. Reading the fine print carefully can prevent future disputes.</p>
+                </details>
+
+                <!-- Advanced FAQ 16: Co-applicant Benefits -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">When should I consider adding a co-applicant?</summary>
+                    <p class="mt-4 text-gray-700">A co-applicant can help when your individual income or credit profile isn't sufficient for the desired loan amount. This is common for home loans, education loans, or when applying for higher amounts. The co-applicant's income and credit history are considered alongside yours, potentially improving approval chances and loan terms.</p>
+                </details>
+
+                <!-- Advanced FAQ 17: Loan Moratorium -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">What is a loan moratorium and when is it useful?</summary>
+                    <p class="mt-4 text-gray-700">A loan moratorium is a temporary pause in EMI payments, usually granted during financial difficulties. It's not automatic and depends on lender policies and your repayment history. Some loans offer built-in moratorium periods (like education loans). This can provide breathing room but may affect your credit score and increase total interest paid.</p>
+                </details>
+
+                <!-- Advanced FAQ 18: Balance Transfer Benefits -->
+                <details class="bg-white p-6 rounded-lg shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600">Is balance transfer always beneficial?</summary>
+                    <p class="mt-4 text-gray-700">Balance transfer can be beneficial if you get a lower interest rate, but consider all costs including transfer fees, processing charges, and any changes in tenure. Calculate the total savings over the loan period. Sometimes staying with your current lender might be better if they offer better service or flexible terms. We can help compare options for your specific situation.</p>
+                </details>
+            </div>
+
+            <!-- Call to action after FAQ -->
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">Still have questions? Get personalized guidance from our experts.</p>
+                <a href="#contact" class="apply-btn bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Get Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content/Guides Section: Authority-building content for long-term SEO -->
+    <!-- Educational content establishes E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) by providing valuable information -->
+    <!-- This helps rank for informational searches and positions VyapaarPay Finance as a loan education authority -->
+    <section id="guides" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Loan Education & Guides</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Understanding loans can be complex. Our educational guides help you make informed decisions about your financial needs. Learn from loan advisory professionals who understand the Indian market.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Guide 1: Personal vs Business Loan -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">Personal Loan vs Business Loan: How to Choose</h3>
+                    <p class="text-gray-700 mb-4">Learn the key differences between personal and business loans, including eligibility criteria, documentation requirements, and when each type is most suitable for your financial needs.</p>
+                    <a href="guides/personal-vs-business-loan.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 2: CIBIL Score Improvement -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">How to Improve Your CIBIL Score Before Applying</h3>
+                    <p class="text-gray-700 mb-4">Understand what factors affect your CIBIL score and learn practical steps to improve your credit profile before applying for loans. Knowledge that can save you time and increase approval chances.</p>
+                    <a href="guides/improve-cibil-score.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 3: Documents for Different Loans -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">Documents Required for Different Loan Types</h3>
+                    <p class="text-gray-700 mb-4">A comprehensive guide to the documentation typically required for various loan types in India. Prepare better and avoid delays in your loan application process.</p>
+                    <a href="guides/loan-documents-guide.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 4: Common Rejection Reasons -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">Common Reasons Loan Applications Get Rejected</h3>
+                    <p class="text-gray-700 mb-4">Learn about the most common reasons loan applications are rejected and how to address these issues proactively. Information that helps you present a stronger application.</p>
+                    <a href="guides/loan-rejection-reasons.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 5: Home Loan Basics -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">Home Loan Basics Every First-Time Buyer Should Know</h3>
+                    <p class="text-gray-700 mb-4">Essential information for first-time home buyers including loan-to-value ratios, EMI calculations, tax benefits, and important terms every home loan applicant should understand.</p>
+                    <a href="guides/home-loan-basics.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 6: MSME Loan Options -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">MSME Loan Options Explained Simply</h3>
+                    <p class="text-gray-700 mb-4">Understand the various government-backed and private loan options available for micro, small, and medium enterprises. Learn about eligibility and application processes.</p>
+                    <a href="guides/msme-loan-options.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 7: Secured vs Unsecured Loans -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">Secured vs Unsecured Loans: Understanding the Difference</h3>
+                    <p class="text-gray-700 mb-4">Learn the fundamental differences between secured and unsecured loans, including risk factors, interest implications, and when each type is most appropriate for your situation.</p>
+                    <a href="guides/secured-vs-unsecured-loans.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+
+                <!-- Guide 8: Income Types and Eligibility -->
+                <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-lg font-semibold mb-3 text-blue-600">How Different Income Types Affect Loan Eligibility</h3>
+                    <p class="text-gray-700 mb-4">Understand how salaried, self-employed, and business income types impact loan eligibility and approval processes. Learn what lenders typically look for in different income categories.</p>
+                    <a href="guides/income-types-loan-eligibility.html" class="text-blue-600 hover:text-blue-800 font-medium">Read Guide →</a>
+                </article>
+            </div>
+
+            <!-- Trust note for educational content -->
+            <div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                <p class="text-sm text-blue-800">
+                    <strong>Content prepared by loan advisory professionals.</strong> This educational content is provided for guidance purposes only and does not constitute financial advice. Individual circumstances may vary, and final decisions are made by lending institutions.
+                </p>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="guides.html" class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block">View All Guides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location/Service Area Section: Shows Pan-India presence for local SEO -->
+    <!-- Location signals help Google understand service areas and rank for "loan advisor near me" searches -->
+    <section id="locations" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Loan Advisory Services Across India</h2>
+            <div class="text-center mb-8">
+                <p class="text-lg text-gray-700 mb-6">We provide comprehensive loan advisory services across India with both online and offline support. Our experts are available to guide you through the loan process regardless of your location.</p>
+                <div class="flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-xl font-semibold text-blue-600">Pan-India Coverage</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Delhi NCR</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Mumbai</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Bengaluru</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Pune</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Hyderabad</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Chennai</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Ahmedabad</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Jaipur</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Lucknow</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Kolkata</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">Chandigarh</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                    <span class="font-semibold text-gray-800">And Many More</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-gray-600 mb-4">Can't find your city? No problem! We provide online advisory services across all Indian cities and towns.</p>
+                <a href="contact.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Contact Us for Your City</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Qualification UI: Optional filters to improve lead quality -->
+    <!-- This pre-form helps qualify leads by understanding their employment type and location, improving conversion quality 
+    <section id="lead-qualifier" class="py-8 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-lg font-semibold text-center mb-4">Help us provide better guidance (Optional)</h3>
+                <p class="text-center text-gray-600 mb-6 text-sm">Share a bit more about yourself to get more personalized loan recommendations.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label for="employmentType" class="block text-gray-700 font-medium mb-2 text-sm">Employment Type</label>
+                        <select id="employmentType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                            <option value="">Select (Optional)</option>
+                            <option value="salaried">Salaried Employee</option>
+                            <option value="self-employed">Self-Employed</option>
+                            <option value="business-owner">Business Owner</option>
+                            <option value="student">Student</option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="userCity" class="block text-gray-700 font-medium mb-2 text-sm">Your City</label>
+                        <select id="userCity" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                            <option value="">Select City (Optional)</option>
+                            <option value="delhi">Delhi NCR</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="bangalore">Bengaluru</option>
+                            <option value="pune">Pune</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="jaipur">Jaipur</option>
+                            <option value="lucknow">Lucknow</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="other">Other City</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-end">
+                        <button id="qualifyBtn" class="w-full bg-green-600 text-white py-2 px-4 rounded-md font-medium hover:bg-green-700 transition-colors text-sm">
+                            Get Personalized Guidance
+                        </button>
+                    </div>
+                </div>
+
+                <p class="text-xs text-gray-500 mt-4 text-center">This information helps us connect you with the most suitable advisors in your area.</p>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- Contact Form Section: Lead capture form for loan inquiries -->
+    <section id="contact" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Get Your Free Loan Eligibility Check</h2>
+            <form id="loanForm" class="bg-white p-6 rounded-lg shadow-sm">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
-                        <label for="name" class="block text-gray-700 font-semibold mb-2 text-sm md:text-base">Full Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
-                        <label for="mobile" class="block text-gray-700 font-semibold mb-2 text-sm md:text-base">Mobile Number</label>
-                        <input type="tel" id="mobile" name="mobile" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base">
+                        <label for="mobile" class="block text-gray-700 font-semibold mb-2">Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                 </div>
                 <div class="mb-4">
-                    <label for="loanType" class="block text-gray-700 font-semibold mb-2 text-sm md:text-base">Loan Type</label>
-                    <select id="loanType" name="loanType" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base">
+                    <label for="loanType" class="block text-gray-700 font-semibold mb-2">Loan Type</label>
+                    <select id="loanType" name="loanType" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="">Select Loan Type</option>
                         <option value="Personal Loan">Personal Loan</option>
                         <option value="Business Loan">Business Loan</option>
                         <option value="MSME Loan">MSME Loan</option>
-                        <option value="CIBIL Guidance">CIBIL Guidance</option>
-                        <option value="GST-Based Loan">GST-Based Loan</option>
+                        <option value="Home Loan">Home Loan</option>
+                        <option value="Vehicle Loan">Vehicle Loan</option>
+                        <option value="Working Capital">Working Capital / Credit Card</option>
                     </select>
                 </div>
                 <div class="mb-4">
-                    <label for="amount" class="block text-gray-700 font-semibold mb-2 text-sm md:text-base">Approx Loan Amount (₹)</label>
-                    <input type="number" id="amount" name="amount" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base">
+                    <label for="amount" class="block text-gray-700 font-semibold mb-2">Approx Loan Amount (₹)</label>
+                    <input type="number" id="amount" name="amount" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div class="mb-6">
                     <label class="flex items-start">
                         <input type="checkbox" id="consent" name="consent" required class="mr-2 mt-1">
-                        <span class="text-gray-700 text-sm md:text-base">I agree to receive communication from VyapaarPay Finance regarding my loan inquiry.</span>
+                        <span class="text-gray-700">I agree to receive communication from VyapaarPay Finance regarding my loan inquiry.</span>
                     </label>
                 </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 rounded-md font-semibold hover:from-blue-700 hover:to-teal-600 transition-all duration-300 text-sm md:text-base">Submit & Get Free Consultation</button>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors">Submit & Get Free Consultation</button>
             </form>
         </div>
     </section>
 
-    <!-- WhatsApp CTA Section -->
-    <section id="whatsapp" class="py-12 md:py-16 px-4 bg-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 md:mb-8" data-aos="fade-up">Ready to Get Started?</h2>
-            <p class="text-base md:text-lg mb-6 md:mb-8" data-aos="fade-up" data-aos-delay="200">Chat with our loan experts on WhatsApp for instant guidance.</p>
-            <a href="#" id="whatsappBtn" class="inline-block bg-green-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-green-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+    <!-- WhatsApp CTA Section: Call-to-action for WhatsApp consultation -->
+    <!-- WhatsApp Click-to-Chat enables instant contact without API, improving response speed -->
+    <!-- Pre-filled messages provide context and improve lead quality for better conversion -->
+    <section id="whatsapp" class="py-12 md:py-16 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-lg mb-8">Chat with our loan experts on WhatsApp for personalized guidance.</p>
+            <a href="#" id="whatsappBtn" class="inline-block bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors whatsapp-cta">
                 <span class="flex items-center">
-                    <svg class="w-5 h-5 md:w-6 md:h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
                     </svg>
                     WhatsApp Us Now
                 </span>
             </a>
+            <!-- Trust signals for WhatsApp CTA -->
+            <div class="mt-6 text-sm text-gray-600">
+                <p class="flex items-center justify-center">
+                    <span class="mr-2">🛡️</span>
+                    Advisory-only service • No guaranteed approvals • Response within business hours
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="mb-4">VyapaarPay Finance is a loan advisory service. Loan approval depends on lender policies and your eligibility. We do not guarantee loan approval.</p>
-            <p>&copy; 2025 VyapaarPay Finance. All rights reserved.</p>
+    <!-- Footer Section: Comprehensive footer with navigation and legal links -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="VyapaarPay Finance Logo" class="h-8 w-auto mr-3">
+                        <span class="text-xl font-bold">VyapaarPay Finance</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Expert loan advisory services for individuals and businesses in India. We provide personalized guidance and connect you with the right financial partners. Loan approval is subject to lender policies and your eligibility.</p>
+                    <p class="text-sm text-gray-400">© 2026 VyapaarPay Finance. All rights reserved.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">Loan Options</a></li>
+                        <li><a href="guides.html" class="text-gray-300 hover:text-white transition-colors">Educational Guides</a></li>
+                        <li><a href="#locations" class="text-gray-300 hover:text-white transition-colors">Service Areas</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="about-us.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors primary-cta">Check Loan Options</a></li>
+                        <li class="pt-2">
+                            <a href="#" class="inline-flex items-center px-3 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-600 transition-colors whatsapp-cta">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Loan Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Loan Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">Personal Loan</a></li>
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">Business Loan</a></li>
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">MSME Loan</a></li>
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">Home Loan</a></li>
+                        <li><a href="#loan-discovery" class="text-gray-300 hover:text-white transition-colors">Vehicle Loan</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <!-- Social Media Links: Build trust and provide multiple contact channels -->
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://wa.me/916390666060" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-green-400 transition-colors" aria-label="WhatsApp">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/vyapaarpay" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-400 transition-colors" aria-label="Instagram">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/vyapaarpay" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/company/vyapaarpay" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="privacy-policy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-300 hover:text-white transition-colors">Terms & Conditions</a>
+                    <a href="disclaimer.html" class="text-gray-300 hover:text-white transition-colors">Disclaimer</a>
+                </div>
+                <p class="text-center text-gray-400 text-sm mt-4">VyapaarPay Finance is a loan advisory and support service. We do not guarantee loan approval.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
