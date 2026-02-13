@@ -1,8 +1,18 @@
-const express = require("express");
+﻿const express = require("express");
+const path = require("path");
+
 const app = express();
+const rootDir = __dirname;
+
+// Serve static files and folder-based index.html routes.
+app.use(express.static(rootDir));
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 
 app.get("/", (req, res) => {
-  res.send("VyapaarPay Backend Running");
+  res.sendFile(path.join(rootDir, "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
