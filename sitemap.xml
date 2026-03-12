@@ -3,97 +3,145 @@
   <url>
     <loc>https://www.vyapaarpay.com/</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/about/</loc>
+    <loc>https://www.vyapaarpay.com/about-us.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/contact/</loc>
+    <loc>https://www.vyapaarpay.com/contact.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/</loc>
+    <loc>https://www.vyapaarpay.com/guides.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/privacy-policy/</loc>
+    <loc>https://www.vyapaarpay.com/privacy-policy.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/terms/</loc>
+    <loc>https://www.vyapaarpay.com/terms-and-conditions.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/disclaimer/</loc>
+    <loc>https://www.vyapaarpay.com/disclaimer.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/thank-you/</loc>
+    <loc>https://www.vyapaarpay.com/thank-you.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/loan-application-rejection-reasons/</loc>
+    <loc>https://www.vyapaarpay.com/loan-application-rejection-reasons.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.vyapaarpay.com/emi-calculator/</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vyapaarpay.com/business-loan-emi-calculator/</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vyapaarpay.com/msme-loan-emi-calculator/</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vyapaarpay.com/self-employed-loan-emi-calculator/</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/how-emi-is-calculated/</loc>
+    <loc>https://www.vyapaarpay.com/guides/how-emi-is-calculated/index.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/how-to-reduce-emi-legally/</loc>
+    <loc>https://www.vyapaarpay.com/guides/how-to-reduce-emi-legally/index.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/choose-loan-service-provider-india/</loc>
+    <loc>https://www.vyapaarpay.com/guides/choose-loan-service-provider-india.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/documents-required-loans-india/</loc>
+    <loc>https://www.vyapaarpay.com/guides/documents-required-loans-india.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/loan-eligibility-criteria-india/</loc>
+    <loc>https://www.vyapaarpay.com/guides/loan-eligibility-criteria-india.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/loan-myths-india/</loc>
+    <loc>https://www.vyapaarpay.com/guides/loan-myths-india.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/loan-services-improve-approval-chances/</loc>
+    <loc>https://www.vyapaarpay.com/guides/loan-services-improve-approval-chances.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/personal-vs-business-vs-msme-loan/</loc>
+    <loc>https://www.vyapaarpay.com/guides/personal-vs-business-vs-msme-loan.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/safe-to-apply-through-loan-service-providers/</loc>
+    <loc>https://www.vyapaarpay.com/guides/safe-to-apply-through-loan-service-providers.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/what-are-loan-services-india/</loc>
+    <loc>https://www.vyapaarpay.com/guides/what-are-loan-services-india.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.vyapaarpay.com/guides/which-type-of-loan-is-right/</loc>
+    <loc>https://www.vyapaarpay.com/guides/which-type-of-loan-is-right.html</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
